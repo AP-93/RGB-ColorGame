@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Color Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="hdr">
+        GUESS
+        <strong>
+          <span id="R" class="RGBhdr">R</span><span id="G" class="RGBhdr">G</span><span id="B" class="RGBhdr">B</span>
+        </strong>
+        COLOR
+        <br/>
+        <span id="questionDisplay">RGB</span><br/>
+        <div class="scoreStat">
+          SCORE:
+          <span id="score">0</span>
+        </div>
+      </div>
+      <div class="bar">
+        <div id="countdownBar"></div>
+      </div>
+      <div class="squaresWrapper">
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+        <div class="box d"></div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <h1 id="modalHeader">GAME RULES</h1>
+        <p id="modalText">This is simple RGB color guessing game. Try to guess as many as you can in 2 minutes.Each correct answer gives 3 points and wrong answer reduces score by 1.
+        </p>
+        <br/>
+        <button type="button" id="startBtn">START</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+
+</html>
